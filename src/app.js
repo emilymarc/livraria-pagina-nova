@@ -5,11 +5,12 @@ const db = require("./database")
 const app = express()
 
 app.use(express.json())
+app.use(express.urlencoded({ extended: true}))
 
 db.hasConnection()
 
 app.use(routes)
 
-app.listen(4000, () => console.log('Servidor no ar!'))
+app.listen(3000, () => console.log('Servidor no ar!'))
 
 
