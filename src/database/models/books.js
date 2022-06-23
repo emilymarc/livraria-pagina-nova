@@ -2,7 +2,7 @@ const db = require("../index");
 const { DataTypes } = require("sequelize");
 
 const Books = db.define(
-  "Books",
+  "books",
   {
     id: {
       allowNull: false,
