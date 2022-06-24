@@ -6,6 +6,7 @@ const BookController = {
             ...req.body
         })
 
+        console.log(req.files)
         return res.status(201).json(newBook)
     }
 }
