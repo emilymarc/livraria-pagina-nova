@@ -1,4 +1,5 @@
 const cloudinary = require("cloudinary")
+// credenciais SDK - botar no env
 
 cloudinary.config({ 
     cloud_name: 'millycorn', 
